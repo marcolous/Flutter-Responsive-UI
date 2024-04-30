@@ -49,18 +49,19 @@ class CustomDrawer extends StatelessWidget {
             child: Icon(Icons.favorite_rounded, color: Colors.black, size: 90),
           ),
           Gap(70),
-          CustomRow(text: 'DASHBOARD', icon: Icons.home_rounded),
-          CustomRow(text: 'SETTINGS', icon: Icons.settings),
-          CustomRow(text: 'ABOUT', icon: Icons.error_rounded),
-          CustomRow(text: 'LOGOUT', icon: Icons.logout_rounded),
+          CustomListTile(text: 'DASHBOARD', icon: Icons.home_rounded),
+          CustomListTile(text: 'SETTINGS', icon: Icons.settings),
+          CustomListTile(text: 'ABOUT', icon: Icons.error_rounded),
+          CustomListTile(text: 'LOGOUT', icon: Icons.logout_rounded),
         ],
       ),
     );
   }
 }
 
-class CustomRow extends StatelessWidget {
-  const CustomRow({super.key, required this.text, required this.icon});
+class CustomListTile extends StatelessWidget {
+  
+  const CustomListTile({super.key, required this.text, required this.icon});
   final String text;
   final IconData icon;
   @override
