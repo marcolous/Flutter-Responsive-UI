@@ -16,8 +16,6 @@ class TabletGridViewBody extends StatelessWidget {
           padding: const EdgeInsets.only(right: 10),
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
-            //shrinkWrap: true,
-            //physics: const NeverScrollableScrollPhysics(),
             itemCount: 20,
             itemBuilder: (context, index) => const AspectRatio(
               aspectRatio: 1,
