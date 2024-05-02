@@ -11,12 +11,16 @@ class CustomListTile extends StatelessWidget {
       child: ListTile(
         onTap: () {},
         leading: Icon(icon, size: 30),
-        title: Text(
-          text,
-          style: const TextStyle(
-            letterSpacing: 4,
-            fontSize: 18,
-            fontWeight: FontWeight.w500,
+        title: FittedBox(
+          alignment: Alignment.centerLeft,
+          fit: BoxFit.scaleDown,
+          child: Text(
+            text,
+            style: const TextStyle(
+              letterSpacing: 4,
+              fontSize: 18,
+              fontWeight: FontWeight.w500,
+            ),
           ),
         ),
       ),
